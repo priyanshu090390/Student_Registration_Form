@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration System using HTML, CSS, and JavaScript">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="Srf.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Registration System</h1>
+    <p>Managing and Updating student records easily</p>
+</header>
+
+<main>
+    <!-- Student Registration Form -->
+    <section class="form-section">
+        <h2>Register Student</h2>
+        <form id="studentForm">
+            <input type="hidden" id="editIndex">
+
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter student name">
+
+            <label>Student ID</label>
+            <input type="text" id="studentId" placeholder="Enter student ID">
+
+            <label>Email ID</label>
+            <input type="email" id="email" placeholder="Enter email">
+
+            <label>Contact Number</label>
+            <input type="text" id="contact" placeholder="Enter contact number">
+
+            <button type="submit">Save Student</button>
+        </form>
+    </section>
+
+    <!-- Display Section -->
+    <section class="display-section">
+        <h2>Registered Students</h2>
+        <div id="studentList"></div>
+    </section>
+</main>
+
+<script src="Srf.js"></script>
+</body>
+</html>

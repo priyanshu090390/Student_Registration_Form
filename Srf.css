@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f9;
+}
+
+header {
+    background: rgb(52, 69, 68);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 12px;
+    background: rgb(16, 122, 157);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background: rgb(91, 91, 204);
+}
+
+/* Display Section */
+.display-section {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 400px;
+    overflow-y: auto; /* Dynamic vertical scrollbar */
+}
+
+.student-card {
+    border-bottom: 1px solid rgb(209, 208, 208);
+    padding: 10px 0;
+}
+
+.student-card button {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+/* Responsive Design */
+
+/* Mobile width matching */
+@media (max-width: 640px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+/* Tablet width matching */
+@media (min-width: 641px) and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+/* Desktop widht matching */
+@media (min-width: 1025px) {
+    main {
+        flex-direction: row;
+    }
+}
